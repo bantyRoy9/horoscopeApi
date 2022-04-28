@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import DataInfo from './dataInfo';
 import 'primeicons/primeicons.css';
+import { useNavigate } from 'react-router-dom';
  
 
 
 const FormInput = () => {
+  const navigation = useNavigate();
   const [user, setUser] = useState({sign:'aquarius',date:'today'});
   const [preload, setPreload] = useState(false);
   const [ data, setData ] = useState(false)
@@ -26,7 +28,9 @@ const FormInput = () => {
         console.log(response.data);
       }).catch(err =>{
         console.log(err);
-        alert('something Error')
+        alert('something Error');
+        navigation('/')
+        
       });
     }
   
