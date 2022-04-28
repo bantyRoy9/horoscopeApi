@@ -167,9 +167,9 @@ body{
   margin: 10px 0px;
 }
 .form input:last-child{
-  top: 40%;
+  top: 300px;
   left: 40vw;
-  margin: auto;
+  position: fixed;
 }
 .preloading{
   top: 45%;
