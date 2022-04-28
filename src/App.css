@@ -169,10 +169,9 @@ body{
 .form input:last-child{
   top: 300px;
   left: 40vw;
-  position: fixed;
 }
 .preloading{
-  top: 45%;
+  top: 310px;
 }
 .data-container{
   margin-top: 130px;
